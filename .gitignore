@@ -1,0 +1,14 @@
+# Dependencies
+node_modules
+
+# Build files
+/build
+dist
+
+# Environment variables
+.env
+
+# IDE files
+.vscode
+.idea
+*storybook.log
