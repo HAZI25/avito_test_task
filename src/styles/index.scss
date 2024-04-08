@@ -1,0 +1,25 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+@import 'variables/global';
+@import 'reset';
+
+
+
+.app {
+	min-height: 100vh;
+	font-family: var(--font-family-main);
+	font-size: var(--font-size-m);
+	display: flex;
+	flex-direction: column;
+	overflow: hidden;
+}
+
+main {
+	flex-grow: 1;
+}
+
+.container {
+	width: 100%;
+	max-width: calc(var(--container-width) + 2 * var(--container-inline-padding));
+	padding-inline: var(--container-inline-padding);
+	margin: 0 auto;
+}

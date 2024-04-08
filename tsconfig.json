@@ -15,8 +15,8 @@
 		// которые используют commonJS как с обычными с помощью import
 		"esModuleInterop": true,
 		// позволяет работать с библ без default import
-		"allowSyntheticDefaultImports": true
-		// "plugins": [{ "name": "typescript-plugin-css-modules" }]
+		"allowSyntheticDefaultImports": true,
+		"plugins": [{ "name": "typescript-plugin-css-modules" }]
 	},
 	"ts-node": {
 		"compilerOptions": {
