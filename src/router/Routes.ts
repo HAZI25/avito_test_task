@@ -1,5 +1,5 @@
 export enum Routes {
 	'Home' = '/',
-	'Film' = '/film',
+	'Movie' = '/movie',
 	'RandomFilm' = '/random_film',
 }

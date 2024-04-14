@@ -1,0 +1,35 @@
+.root {
+	display: flex;
+	column-gap: 30px;
+
+	@media (max-width: 576px) {
+		padding-block: 15px;
+	}
+
+	@media (max-width: 992px) {
+		flex-direction: column;
+		row-gap: 15px;
+	}
+}
+
+.loader {
+	margin-block: 15px;
+}
+
+.filter {
+	align-self: flex-end;
+	@media (min-width: 992px) {
+		align-self: auto;
+		flex: 0 0 300px;
+	}
+}
+
+.movies {
+	flex-grow: 1;
+}
+
+.moviesWrapper {
+	& > :not(:last-child) {
+		margin-bottom: 15px;
+	}
+}

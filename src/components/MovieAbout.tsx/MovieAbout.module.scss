@@ -1,0 +1,33 @@
+.root {
+	font-size: var(--font-size-s);
+
+	@media (max-width: 576px) {
+		font-size: var(--font-size-extra-s);
+	}
+}
+
+.aboutTitle {
+	font-size: var(--font-size-l);
+	margin-bottom: 20px;
+}
+
+.aboutRows {
+	& > :not(:last-child) {
+		margin-bottom: 10px;
+	}
+	overflow: auto;
+	text-indent: 1px;
+}
+
+.aboutRow {
+	display: flex;
+	gap: 15px;
+}
+.aboutLabel {
+	flex: 0 0 200px;
+	color: var(--gray-dark);
+
+	@media (max-width: 576px) {
+		flex-basis: 150px;
+	}
+}

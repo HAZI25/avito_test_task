@@ -1,0 +1,19 @@
+.root {
+	display: flex;
+	gap: 15px;
+	flex-direction: column;
+}
+
+.row {
+	& p {
+		white-space: nowrap;
+		padding-bottom: 5px;
+	}
+
+	& select {
+		font-size: var(--font-size-s);
+		color: var(--gray-dark);
+		width: 100%;
+		max-width: 300px;
+	}
+}

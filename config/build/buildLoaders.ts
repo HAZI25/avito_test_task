@@ -9,8 +9,9 @@ function buildLoaders(options: BuildOptions): ModuleOptions['rules'] {
 	const isDev = mode === 'development';
 
 	const svgLoader = {
-		test: /\.svg$/,
-		use: ['@svgr/webpack'],
+		test: /\.svg$/i,
+		issuer: /\.[jt]sx?$/,
+		use: '@svgr/webpack',
 	};
 
 	const assetLoader = {
@@ -35,7 +36,7 @@ function buildLoaders(options: BuildOptions): ModuleOptions['rules'] {
 	};
 
 	const cssLoader = {
-		test: /\.s[ac]ss$/i,
+		test: /\.s?[ac]ss$/i,
 		use: [
 			isDev ? 'style-loader' : MiniCssExtractPlugin.loader,
 			{

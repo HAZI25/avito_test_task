@@ -1,0 +1,30 @@
+.root {
+	padding: 10px;
+	border: 1px solid black;
+	box-shadow: 5px 5px black;
+	display: flex;
+	flex-direction: column;
+	gap: 10px;
+
+	&.positive {
+		background-color: var(--positive-green);
+	}
+
+	&.negative {
+		background-color: var(--negative-red);
+	}
+}
+
+.title {
+}
+
+.review {
+	font-size: var(--font-size-s);
+	flex-grow: 1;
+}
+
+.date {
+	font-size: var(--font-size-extra-s);
+	color: var(--gray-dark);
+	text-align: end;
+}

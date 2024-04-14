@@ -1,0 +1,81 @@
+.root {
+	& > :not(:last-child) {
+		margin-bottom: 30px;
+	}
+}
+
+.info {
+	display: flex;
+	column-gap: 30px;
+
+	@media (max-width: 768px) {
+		flex-direction: column;
+		row-gap: 20px;
+	}
+}
+
+.poster {
+	height: 300px;
+	object-fit: contain;
+	@media (max-width: 768px) {
+		height: 500px;
+		width: auto;
+	}
+
+	@media (max-width: 576px) {
+		width: 100%;
+		height: auto;
+	}
+}
+
+.content {
+	flex-grow: 1;
+}
+
+.nameWrapper {
+	& > :not(:last-child) {
+		margin-bottom: 10px;
+	}
+}
+
+.name {
+	font-size: var(--font-size-extra-l);
+	@media (max-width: 576px) {
+		text-align: center;
+	}
+}
+
+.nameRating {
+	display: flex;
+	justify-content: space-between;
+	gap: 30px;
+	margin-bottom: 20px;
+
+	@media (max-width: 576px) {
+		flex-direction: column;
+		align-items: center;
+		row-gap: 20px;
+	}
+}
+
+.ratingWrapper {
+	& > :not(:last-child) {
+		margin-bottom: 5px;
+	}
+}
+
+.rating {
+	white-space: nowrap;
+	font-size: var(--font-size-l);
+}
+
+.votes {
+	white-space: nowrap;
+	font-size: var(--font-size-s);
+	color: var(--gray-dark);
+}
+
+.descriptionTitle {
+	font-size: var(--font-size-l);
+	margin-bottom: 20px;
+}

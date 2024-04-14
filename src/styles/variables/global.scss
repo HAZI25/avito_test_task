@@ -11,7 +11,8 @@
 	--font-size-extra-s: 12px;
 	--font-size-s: 14px;
 	--font-size-m: 16px;
-	--font-size-l: 24px;
+	--font-size-l: 20px;
+	--font-size-extra-l: 26px;
 
 	--text-light: #fff;
 	--text-dark: #000;
@@ -19,6 +20,19 @@
 	--gray-dark: #373737;
 	--gray-black: #141414;
 
-	--container-width: 1150px;
+	--positive-green: rgb(150, 255, 150);
+	--negative-red: rgb(255, 160, 150);
+
+	--container-width: 1200px;
 	--container-inline-padding: 15px;
+
+	--burgerWidth: 30px;
+	--burgerHeight: 18px;
+	--burgerLineHeight: 2px;
+	--burgerLineBorderRadius: 0px;
+	--burgerColor: var(--gray-medium);
+	--burgerActiveColor: #fff;
+
+	--box-shadow-black: 5px 5px black;
+	--border-black: 1px solid black;
 }

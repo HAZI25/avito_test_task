@@ -15,7 +15,10 @@ function buildPlugins(options: BuildOptions): Configuration['plugins'] {
 		new HtmlWebpackPlugin({
 			template: paths.html,
 		}),
-		new webpack.ProgressPlugin()
+		new webpack.DefinePlugin({
+			__TOKEN__: JSON.stringify(process.env.TOKEN),
+		}),
+		new webpack.ProgressPlugin(),
 	];
 
 	if (isProd) {

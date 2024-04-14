@@ -1,0 +1,41 @@
+.root {
+	border: var(--border-black);
+}
+
+.main {
+	display: flex;
+	flex-direction: column;
+}
+
+.poster {
+	height: 300px;
+	width: 100%;
+	object-fit: contain;
+
+	@media (max-width: 576px) {
+		height: 500px;
+	}
+}
+
+.info {
+	padding: 10px;
+	flex-grow: 1;
+
+	& > :not(:last-child) {
+		margin-bottom: 15px;
+	}
+}
+
+.infoSecondary {
+	color: var(--gray-dark);
+	font-size: var(--font-size-s);
+
+	& > :not(:last-child) {
+		margin-bottom: 5px;
+	}
+}
+
+.nameWrapper {
+	text-align: center;
+}
+
